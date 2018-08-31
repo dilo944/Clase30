@@ -42,12 +42,25 @@ public class CalcularDefinitiva {
 		System.out.println("Definitiva : " + def);
 		
 	}
+	//identando
+	public void mensaje () {
+		if(def >=2.95) {
+			System.out.println("Aprobado");
+		}else {
+			if(def >=1.95 && def < 2.95) {
+				System.out.println("Habilita");	
+			}else {
+				System.out.println("Reprobado");
+			}
+		}
+	}
 	
 	public static void main(String[] args) {
 		CalcularDefinitiva cf = new CalcularDefinitiva();   //mecanismo de puente entre el main y el metodo
 		cf.leerNotas();
 		cf.calcular();
 		cf.mostrar();
+		cf.mensaje();
 	}
 
 }
